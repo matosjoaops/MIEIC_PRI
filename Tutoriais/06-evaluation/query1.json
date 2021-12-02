@@ -1,0 +1,8 @@
+{
+    "query": {
+        "multi_match": {
+            "query": "informação",
+            "fields": ["title", "objectives", "learning_outcomes"]
+        }
+    }
+}

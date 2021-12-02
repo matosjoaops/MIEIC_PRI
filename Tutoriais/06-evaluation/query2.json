@@ -1,0 +1,38 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "match": {
+                        "title": {
+                            "query": "informação",
+                            "boost": 2
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "objectives": {
+                            "query": "informação"
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "learning_outcomes": {
+                            "query": "informação"
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "title":{
+                            "query": "dados",
+                            "boost": 3
+                        }
+                    }
+                }
+            ] 
+        }
+    }
+}
